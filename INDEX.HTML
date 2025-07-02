@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complejo Educativo Marcos Gómez Núñez</title>
+    <style>
+        body {
+            font-family: "Courier", cursive; /* Estilo de letra de carta */
+            color: black;
+            background-image: url('IMAGENES/invi.PNG'); /* Imagen de fondo */
+            background-size: cover; /* Ajustar imagen de fondo */
+            background-position: center;
+            text-align: center;
+            padding: 30px;
+        }
+        h1 {
+            font-size: 50px;
+            opacity: 0;
+            animation: bloom 2s ease-in-out forwards;
+        }
+        @keyframes bloom {
+            0% { letter-spacing: -20px; opacity: 0; }
+            50% { letter-spacing: 3px; opacity: 0.5; }
+            100% { letter-spacing: normal; opacity: 1; }
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 imágenes en una fila */
+            gap: 20px;
+            justify-items: center; /* Centrar los elementos */
+            align-items: center; /* Alinear la imagen principal con las demás */
+        }
+        .item {
+            text-align: center;
+        }
+        .item img {
+            width: 100%;
+            height: auto;
+            animation: float 3s ease-in-out infinite; /* Flotación */
+        }
+        .large-image img {
+            width: 100%;
+            height: auto;
+            animation: float 3s ease-in-out infinite;
+        }
+        .large-image p {
+            font-size: 30px; /* Aumentar más el tamaño del texto de la imagen principal */
+            font-weight: bold;
+            color: #111;
+        }
+        .item p {
+            font-size: 25px;
+            font-weight: bold;
+            color: #111;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>COMPLEJO EDUCATIVO MARCOS GÓMEZ NÚÑEZ</h1>
+ 
+    <div class="grid-container">
+        <div class="large-image">
+            <img src="IMAGENES/PAR.PNG" alt="Imagen principal">
+            <p>BACHILLERATOS</p>
+        </div>
+        <div class="item">
+		
+            <a href="file:///C:/Users/MINED/Documents/COMPLEJO/SALUD.HTML"><img src="IMAGENES/LOGOB.PNG" alt="Imagen 1"></a>
+            <p>SALUD</p>
+        </div>
+        <div class="item">
+            <a href="file:///C:/Users/MINED/Documents/COMPLEJO/AUTOMOTRIZ.HTML"><img src="IMAGENES/LOGOC.PNG" alt="Imagen 2"></a>
+            <p>AUTOMOTRIZ</p>
+        </div>
+        <div class="item">
+            <a href="file:///C:/Users/MINED/Documents/COMPLEJO/GENERALL.HTML"><img src="IMAGENES/LOGOE.PNG" alt="Imagen 3"></a>
+            <p>GENERAL</p>
+        </div>
+        <div class="item">
+            <a href="file:///C:/Users/MINED/Documents/COMPLEJO/CONTADOR.HTML"><img src="IMAGENES/LOGOD.PNG" alt="Imagen 4"></a>
+            <p>ADMINISTRATIVO CONTABLE</p>
+        </div>
+    </div>
+
+</body>
+</html>
